@@ -1,0 +1,42 @@
+int myAtoi(char *s)
+{
+int i = 0;
+    int sign = 1;
+    int result = 0;
+
+    // 1. Skip spaces
+    while (s[i] == ' ')
+        i++;
+
+    // 2. Check sign
+    if (s[i] == '-')
+    {
+        sign = -1;
+        i++;
+    }
+    else if (s[i] == '+')
+    {
+        i++;
+    }
+
+    // 3. Convert digits
+    while (s[i] >= '0' && s[i] <= '9')
+    {
+        int digit = s[i] - '0';
+
+        // Check overflow
+        if (result > 214748364 ||
+            (result == 214748364 && digit > 7))
+        {
+            if (sign == 1)
+                return 2147483647;
+            else
+                return -2147483648;
+        }
+
+        result = result * 10 + digit;
+        i++;
+    }
+
+    return result * sign;
+}
