@@ -1,4 +1,4 @@
-char* toHex(int num) {
+char toHex(int num) {
      static char result[9]; 
     
      memset(result, 0, sizeof(result)); 
