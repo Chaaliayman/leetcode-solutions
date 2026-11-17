@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :        ::::::::   */
+/*                                                                            */
+/*       CCCCC  H   H   AAAAA   AAAAA   L       IIIII                         */
+/*      C       H   H   A   A   A   A   L         I                           */
+/*      C       HHHHH   AAAAA   AAAAA   L         I                          */
+/*      C       H   H   A   A   A   A   L         I                         */
+/*       CCCCC  H   H   A   A   A   A   LLLLL   IIIII                      */
+/*                                                                        */
+/*                                                                       */
+/*                                                                     */
+/* ****************************************************************** */
+
 bool increasingTriplet(int* nums, int numsSize)
 { 
     int first = INT_MAX;
